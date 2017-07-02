@@ -32,4 +32,6 @@ module.exports = (app) => {
       require('./' + folder + '/' + name)(router);
     });
   });
+
+  return router;
 };

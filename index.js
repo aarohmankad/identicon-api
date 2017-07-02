@@ -1,4 +1,5 @@
 const
+	path = require('path'),
 	express = require('express'),
 	bodyParser = require('body-parser');
 
@@ -19,7 +20,11 @@ app.use(function (req, res, next) {
     next();
 });
 
-require('./routes')(app);
+const router = require('./routes')(app);
+
+router.get('*', (req, res) => {
+	res.sendFile(path.join(__dirname + '/README.html'));
+});
 
 app.listen(port);
 console.log(`Magic happens on port: ${port}`);
