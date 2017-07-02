@@ -7,7 +7,7 @@ This project stemmed from the need to include dynamic, default identicons for ne
 I strived to make the API as easy to use as possible. Use can look like so:
 
 ```html
-	<img src="https://identicon-api.herokuapp.com/<username>/<size>" alt="">
+<img src="https://identicon-api.herokuapp.com/<username>/<size>" alt="">
 ```
 
 * `username`: This doesn't have to be a username, just any string. Hashing is done server-side using SHA-256.
