@@ -1,0 +1,14 @@
+{
+  "name": "identicon-api",
+  "version": "1.0.0",
+  "description": "An API for fetching identicons",
+  "main": "index.js",
+  "author": "Aaroh Mankad (http://aarohmankad.com)",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "hash.js": "^1.1.3",
+    "jdenticon": "^1.4.0"
+  }
+}
