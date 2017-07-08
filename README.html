@@ -1018,12 +1018,13 @@ body .markdown-body
 <p>This project stemmed from the need to include dynamic, default identicons for new users of <a href="http://unum.la/">UNUM</a>. I was inspired by the amazing work of <a href="https://github.com/dmester/jdenticon">jdenticon</a>, a javascript module that allowed the generating of identicons. This project provides a simple interface to that project.</p>
 <h2 id="use"><a name="user-content-use" href="#use" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Use</h2>
 <p>I strived to make the API as easy to use as possible. Use can look like so:</p>
-<pre><code class="html">&lt;img src=&quot;https://identicon-api.herokuapp.com/&lt;username&gt;/&lt;size&gt;&quot; alt=&quot;&quot;&gt;
+<pre><code class="html">&lt;img src=&quot;https://identicon-api.herokuapp.com/&lt;username&gt;/&lt;size&gt;?format=(svg|png)&quot; alt=&quot;&quot;&gt;
 </code></pre>
 
 <ul>
 <li><code>username</code>: This doesn&rsquo;t have to be a username, just any string. Hashing is done server-side using SHA-256.</li>
-<li><code>size</code>: This is the size of the SVG you would like returned. For now, the API only returns square, so <code>size</code> is any natural number.</li>
+<li><code>size</code>: This is the size of the image you would like returned. For now, the API only returns square, so <code>size</code> is any natural number.</li>
+<li><code>format</code>: This is the format you would like the image returned in, SVG or PNG. (Default: SVG)</li>
 </ul>
 <h2 id="contributing"><a name="user-content-contributing" href="#contributing" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Contributing</h2>
 <p>I&rsquo;d love for you to contribute to the project! Go ahead and submit a pull request and I&rsquo;ll be sure to take a look at it. Here are some ideas to get you started:</p>

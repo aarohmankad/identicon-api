@@ -8,9 +8,8 @@ module.exports = (router) => {
 
 		let
 			hash = Hash.sha256().update(req.params.hash).digest('hex'),
-			size = parseInt(req.params.size);
-
-		let identicon;
+			size = parseInt(req.params.size),
+			identicon;
 
 		if (req.query.format == 'png') {
 			identicon = jdenticon.toPng(hash, size);
