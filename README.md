@@ -11,8 +11,8 @@ I strived to make the API as easy to use as possible. Use can look like so:
 ```
 
 * `username`: This doesn't have to be a username, just any string. Hashing is done server-side using SHA-256.
-* `size`: This is the size of the image you would like returned. For now, the API only returns square, so `size` is any natural number.
-* `format`: This is the format you would like the image returned in, SVG or PNG. (Default: SVG)
+* `size`: This is the size of the image you would like returned. For now, the API only returns squares, so `size` is any natural number.
+* `format`: This is the format you would like the image returned in, svg or png. (Default: svg)
 
 ## Contributing
 
